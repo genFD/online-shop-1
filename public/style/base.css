@@ -51,3 +51,42 @@ html {
 
   --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+body {
+  background-color: var(--dark-navy);
+  color: var(--white);
+  margin: 0;
+}
+main {
+  width: 90%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--green);
+}
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  padding: var(--space-2) var(--space-6);
+  background-color: var(--green);
+  color: var(--color-primary-500-contrast);
+  border: 0;
+  border-radius: var(--border-radius-small);
+}
+.btn:hover,
+.btn:active {
+  background-color: var(--color-primary-700);
+}
+.btn:active {
+  transform: scale(0.88);
+}
+.btn:focus {
+  outline: 0;
+}
