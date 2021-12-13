@@ -7,6 +7,8 @@ app.use(authRoutes);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static('public'));
+app.use(express.urlencoded({ extended: false }));
+
 db.connectToDatabase()
   .then(() => app.listen('3002'))
   .catch((e) => console.log(e, 'failed to connect to database'));
