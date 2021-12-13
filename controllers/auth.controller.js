@@ -1,5 +1,7 @@
-function getSignUp(req, res) {}
-function login(req, res) {}
+function getSignUp(req, res) {
+  res.render('customer/auth/signup');
+}
+function getLogin(req, res) {}
 module.exports = {
   getSignUp,
   getLogin,
