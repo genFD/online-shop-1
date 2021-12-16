@@ -84,6 +84,7 @@ a {
 .btn:active {
   background-color: var(--color-primary-700);
 }
+
 .btn:active {
   transform: scale(0.88);
 }
